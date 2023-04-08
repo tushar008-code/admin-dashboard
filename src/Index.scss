@@ -54,13 +54,18 @@ aside {
 }
 
 nav.nav-items ul li a {
-  font-size: 18px;
-  padding: 8px 20px;
-  width: 100%;
-  display: flex;
-  font-weight: 400;
-  align-items: center;
-  gap: 20px;
+      font-size: 18px;
+    padding: 12px 20px;
+    width: 100%;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffe2e200;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+         background-color: #ffe2e2;
+    }
 }
 nav.nav-items ul {
   padding-top: 8px;
@@ -352,19 +357,39 @@ nav.main-navbar ul.main-nav-items li svg {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.user-List{
-    padding: 20px;
+.user-List {
+  padding: 20px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin-top: 20px;
-
+  margin-top: 30px;
 }
-.user-List h3{
-    font-size: 26px;
-    font-weight: 400;
-    color: #707070;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.user-List h3 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.tables-user .table img.image {
+  width: 22px;
+}
+.tables-user .table .cellWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tables-user .table .status{
+  padding: 8px;
+  border-radius: 5px;
+      width: max-content;
+    display: inline-block;
+  &.Approved{
+    background-color: #e0ffd5;
+   color: #34c700;
+  }&.Pending{
+    background-color: #ffe6ce;
+   color: #ff7b00;
+  }
 }

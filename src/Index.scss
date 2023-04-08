@@ -257,6 +257,114 @@ nav.main-navbar ul.main-nav-items li svg {
   background: #ffcfeb;
 }
 .chart-section {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 30px;
+  gap: 30px;
+}
+.featured-box {
+  padding: 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+.featured-box h3 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.featured-box h3 span svg {
+  cursor: pointer;
+  color: #000;
+}
+.featured-box .progress > svg {
+  width: 140px;
+  margin-inline: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+.featured-box .progress {
+  margin-top: 20px;
+}
+.featured-box .progress h5 {
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 300;
+  color: #777;
+  margin-bottom: 15px;
+}
+.featured-box .progress h6 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  color: #222;
+  margin-bottom: 12px;
+}
+.featured-box .progress p {
+  font-size: 15px;
+  text-align: center;
+  color: #999;
+  font-weight: 300;
+  padding-block: 10px;
+}
+.featured-box .progress ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.featured-box .progress ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 0 20%;
+  font-size: 18px;
+  color: #888;
+}
+.featured-box .progress ul li span svg {
+  font-size: 26px;
+}
+.featured-box .progress ul li span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.featured-box .progress ul li span.positive {
+  color: #34c700;
+}
+.featured-box .progress ul li span.negetive {
+  color: #ff5c5c;
+}
+.chart {
+  padding: 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.chart h4 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.user-List{
+    padding: 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 20px;
+
+}
+.user-List h3{
+    font-size: 26px;
+    font-weight: 400;
+    color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }

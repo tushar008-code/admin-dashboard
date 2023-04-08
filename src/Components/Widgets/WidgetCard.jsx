@@ -50,7 +50,7 @@ function WidgetCard({ type }) {
     <div className="widget-Card">
       <h3>
         {data.title}
-        <span class="positive">
+        <span className="positive">
           <FaAngleUp />
           {diff}%
         </span>

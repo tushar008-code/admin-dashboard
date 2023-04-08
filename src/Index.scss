@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  color: #000;
+  background-color: aliceblue;
+  text-rendering: optimizeLegibility;
+  font-family: "Rubik", sans-serif;
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    color: #000;
+  }
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+.container {
+  width: 97%;
+  margin-inline: auto;
+}
+
+main {
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+aside header a.logo h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ff5c5c;
+}
+header {
+  padding: 12px 20px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+aside {
+  min-height: 100vh;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+nav.nav-items ul li a {
+  font-size: 18px;
+  padding: 8px 20px;
+  width: 100%;
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  gap: 20px;
+}
+nav.nav-items ul {
+  padding-top: 8px;
+}
+nav.nav-items ul li a svg {
+  font-size: 25px;
+  color: #ff5c5c;
+}
+nav.nav-items ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.nav-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5b5b5b;
+  padding: 6px 10px 12px;
+  margin-top: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.colors {
+  padding: 20px 0;
+}
+.colors h6 {
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 10px;
+}
+
+.colors ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+.colors ul li {
+  height: 26px;
+  width: 26px;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.colors ul li:first-child {
+  background: rgb(255, 255, 255);
+}
+.colors ul li:last-child {
+  background: rgb(36, 36, 36);
+}
+nav.main-navbar {
+  display: flex;
+  align-items: center;
+  padding: 4px 0 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav.main-navbar .search-box {
+  flex: 1 0 25%;
+  position: relative;
+}
+nav.main-navbar .search-box button.search {
+  position: absolute;
+  right: 16px;
+  color: #888;
+  top: 54%;
+  font-size: 18px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+}
+nav.main-navbar ul.main-nav-items li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding-inline: 10px;
+  position: relative;
+}
+nav.main-navbar ul.main-nav-items li span.text {
+  font-size: 18px;
+  font-weight: 300;
+}
+nav.main-navbar ul.main-nav-items li span.notify {
+  font-size: 10px;
+  background-color: #ff5c5c;
+  color: #fff;
+  position: absolute;
+  top: -8px;
+  padding: 5px;
+  font-weight: 600;
+  right: 2px;
+  border-radius: 50%;
+}
+nav.main-navbar .search-box input[type="text"] {
+  height: 40px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  outline: none;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+nav.main-navbar ul.main-nav-items {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 20px;
+  flex: 1 0 75%;
+  justify-content: end;
+}
+nav.main-navbar ul.main-nav-items li.profile img {
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  object-fit: cover;
+  object-position: 0px -4px;
+}
+nav.main-navbar ul.main-nav-items li svg {
+  font-size: 24px;
+}

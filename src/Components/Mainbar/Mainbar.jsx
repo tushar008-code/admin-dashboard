@@ -1,6 +1,6 @@
 import React from "react";
 import MainNavbar from "./MainNavbar";
-import MainContent from "./MainContent";
+import MainContent from "../Maincontent/MainContent";
 
 function Mainbar() {
   return (

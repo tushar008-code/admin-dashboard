@@ -72,7 +72,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/login">
               <RiLogoutBoxRFill /> Logout
             </Link>
           </li>

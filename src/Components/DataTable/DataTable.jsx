@@ -1,6 +1,8 @@
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "./DatatableData";
+import { Link } from "react-router-dom";
+
 function DataTable() {
   const action = [
     {
@@ -27,6 +29,9 @@ function DataTable() {
   return (
     <>
       <div className="data-grid">
+        <h3>
+          List of Users <Link to="/users/new">Add User</Link>
+        </h3>
         <div style={{ height: "600px" }}>
           <DataGrid
             rows={userRows}

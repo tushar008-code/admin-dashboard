@@ -11,6 +11,9 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Rubik", sans-serif;
 }
+.mb-0{
+  margin-bottom: 0 !important;
+} 
 ul {
   li {
     list-style: none;
@@ -537,12 +540,12 @@ nav.main-navbar ul.main-nav-items li svg {
   margin-bottom: 30px;
 }
 .newuser-img figure img {
-    border-radius: 50%;
-    width: 190px;
-    border: 6px solid #aaa;
-    height: 190px;
-    object-fit: cover;
-    object-position: top;
+  border-radius: 50%;
+  width: 190px;
+  border: 6px solid #aaa;
+  height: 190px;
+  object-fit: cover;
+  object-position: top;
 }
 .newuser-img {
   text-align: center;
@@ -573,29 +576,170 @@ nav.main-navbar ul.main-nav-items li svg {
   gap: 8px;
 }
 .newuser-form form button {
-    justify-self: start;
-    padding: 10px 40px;
-    border-radius: 4px;
-    border: none;
-    background: #ff4848;
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-    margin-top: 12px;
-    grid-column: 1 /-1;
+  justify-self: start;
+  padding: 10px 40px;
+  border-radius: 4px;
+  border: none;
+  background: #ff4848;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 12px;
+  grid-column: 1 /-1;
 }
 .newuser-form form label[for="file"] svg {
-    font-size: 32px;
+  font-size: 32px;
 }
-.newuser-form form label[for=file] {
-    font-size: 16px;
-    display: flex;
-    gap: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-    min-height: 65px;
+.newuser-form form label[for="file"] {
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  min-height: 65px;
+  align-items: center;
+  justify-content: center;
+}
+.data-grid h3 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.data-grid {
+  margin-top: 20px;
+}
+.data-grid h3 a {
+  font-size: 16px;
+  border: 2px solid #554aae;
+  color: #554aae;
+  padding: 8px 20px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+section.login-sec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: min(1400px, 95%);
+  margin-inline: auto;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+  min-height: 85vh;
+      margin-block: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    // height: 85vh;
+
+}
+section.login-sec .login-content {
+  background: linear-gradient(92deg, #ff1e1e, #ff6465);
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+section.login-sec .login-content span {
+    height: 320px;
+    width: 92px;
+    transform: rotate(45deg);
+    background-color: rgb(255 255 255 / 11%);
+    border-radius: 50px;
+    position: absolute;
+    &.one{
+    right: 10px;
+    top: -40px;
+    }
+    &.two{
+left: 0;
+top:-19px;
+    }
+    &.three{
+    left: 130px;
+    top: 195px;
+    }
+}
+section.login-sec .login-content h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+section.login-sec .login-card {
+    display: grid;
     align-items: center;
-    justify-content: center;
+    padding-left: 50px;
+}
+section.login-sec .login-card form h4 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+section.login-sec .login-card form p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #545454;
+}
+section.login-sec .login-card form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+ margin-bottom: 30px;
+}
+section.login-sec .login-card form .form-group:last-child{
+  margin-bottom: 0;
+}
+section.login-sec .login-card form .form-group label {
+       font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+section.login-sec .login-card form .form-group input:not([type=submit]) {
+       height: 40px;
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    outline: none;
+    padding-bottom: 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+section.login-sec .login-card form {
+    max-width: 500px;
+}
+section.login-sec .login-card form  h6 {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: end;
+    margin-top: 12px;
+    color: red;
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    padding-bottom: 3px;
+}
+section.login-sec .login-card form .form-group  .eye {
+    position: absolute;
+    right: 12px;
+    bottom: 6px;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+}
+section.login-sec .login-card form .form-group input[type="submit"] {
+    font-size: 18px;
+    padding: 8px 40px;
+    background: #ff3e3f;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    width: max-content;
+    display: block;
+    margin-top: 30px;
+
 }

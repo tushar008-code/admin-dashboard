@@ -1,11 +1,11 @@
 import React from "react";
 import UserTable from "../UserTable/UserTable";
 
-function UserList() {
+function UserList({ title }) {
   return (
     <>
       <div className="user-List">
-        <h3>Latest Transaction</h3>
+        <h3>{title}</h3>
         <UserTable />
       </div>
     </>

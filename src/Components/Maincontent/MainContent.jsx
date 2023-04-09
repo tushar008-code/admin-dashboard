@@ -8,7 +8,7 @@ function MainContent() {
     <div className="main-content">
       <Widget />
       <ChartSection />
-      <UserList />
+      <UserList title="Lastest Transaction" />
     </div>
   );
 }

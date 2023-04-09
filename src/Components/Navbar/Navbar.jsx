@@ -9,6 +9,8 @@ import { BiStats } from "react-icons/bi";
 import { RiLogoutBoxRFill } from "react-icons/ri";
 import { AiFillNotification } from "react-icons/ai";
 import { MdProductionQuantityLimits } from "react-icons/md";
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <>
@@ -16,63 +18,63 @@ function Navbar() {
         <h3 className="nav-title">Main</h3>
         <ul>
           <li>
-            <a href="">
+            <Link to="/">
               <ImStatsBars2 /> Dashboard
-            </a>
+            </Link>
           </li>
         </ul>
         <h3 className="nav-title">List</h3>
         <ul>
           <li>
-            <a href="">
+            <Link to="/users">
               <FaUserAlt /> Users
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link to="/products">
               <MdProductionQuantityLimits /> Products
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
-              <BsFileSpreadsheetFill /> Orders
-            </a>
+            <Link to="/products/1">
+              <BsFileSpreadsheetFill /> Order
+            </Link>
           </li>
           <li>
-            <a href="">
-              <FaTruck /> Delivary
-            </a>
+            <Link to="/products/new">
+              <FaTruck /> Add Product
+            </Link>
           </li>
         </ul>
         <h3 className="nav-title">Usefull</h3>
         <ul>
           <li>
-            <a href="">
+            <Link to="/">
               <BiStats /> Stats
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link to="/">
               <AiFillNotification /> Notification
-            </a>
+            </Link>
           </li>
         </ul>
         <h3 className="nav-title">User</h3>
         <ul>
           <li>
-            <a href="">
+            <Link to="/">
               <FaUserCircle /> Profile
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link to="/">
               <AiFillSetting /> Settings
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link to="/">
               <RiLogoutBoxRFill /> Logout
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

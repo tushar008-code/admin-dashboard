@@ -8,7 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-function Chart() {
+function Chart({ aspect, title }) {
   const data = [
     { name: "January", Total: 1000 },
     { name: "February", Total: 1200 },
@@ -20,8 +20,8 @@ function Chart() {
   return (
     <>
       <div className="chart">
-        <h4>Last 6 Months [Revenue]</h4>
-        <ResponsiveContainer width="100%" aspect={2 / 1}>
+        <h4>{title}</h4>
+        <ResponsiveContainer width="100%" aspect={aspect}>
           <AreaChart
             width={730}
             height={250}
